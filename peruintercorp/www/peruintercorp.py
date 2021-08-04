@@ -6,6 +6,7 @@ from __future__ import unicode_literals
 import frappe
 from frappe import _
 
+no_cache=1
 def get_context(context):
     context["nuestras_soluciones"] = frappe.get_doc("Nuestras Soluciones")
     context["pagina_principal"] = frappe.get_doc("Pagina principal")
