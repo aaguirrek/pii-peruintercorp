@@ -1,0 +1,562 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<meta name="author" content="">
+
+<!-- Favicons -->
+<link rel="shortcut icon" href="/assets/peruintercorp/images/logo.png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="72x72" href="apple-touch-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="114x114" href="apple-touch-icon-114x114.png">
+
+<title>Peru Intercorp</title> 
+
+<!-- Styles -->
+<link href="https://fonts.googleapis.com/css?family=Montserrat:500,600,700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Poppins:300,400,400i&display=swap" rel="stylesheet">
+<link href="/assets/peruintercorp/css/style.css" rel="stylesheet" media="screen">
+</head>
+<body>
+  <div class="animsition">   
+    <div class="loader"><div class="spinner"><div class="double-bounce1"></div><div class="double-bounce2"></div></div></div>
+
+    <!-- Content CLick Capture-->
+
+    <div class="click-capture"></div>
+
+    <!-- Sidebar Menu-->
+
+    <div class="menu"> 
+      <span class="close-menu icon-cross2 right-boxed"></span>
+      <ul class="menu-list right-boxed">
+        <li  data-menuanchor="page1">
+          <a  href="#page1">Home</a>
+        </li>
+        <li  data-menuanchor="page2">
+          <a href="#page2">Soluciones</a>
+        </li>
+        <li  data-menuanchor="page3">
+          <a href="#page3">Desarrollo Web</a>
+        </li>
+        <li  data-menuanchor="page4">
+          <a href="#page4">Sobre la empresa</a>
+        </li>
+        <li  data-menuanchor="page5">
+          <a href="#page5">Proyectos</a>
+        </li>
+        <li  data-menuanchor="page6">
+          <a href="#page6">Clientes</a>
+        </li>
+        <li  data-menuanchor="page7">
+          <a href="#page7">Testimonios</a>
+        </li>
+        <li  data-menuanchor="page8">
+          <a href="#page8">Contacto</a>
+        </li>
+      </ul>
+      <div class="menu-footer right-boxed">
+        <div class="social-list">
+          <a href="" class="icon ion-social-twitter"></a>
+          <a href="" class="icon ion-social-facebook"></a>
+          <a href="" class="icon ion-social-googleplus"></a>
+          <a href="" class="icon ion-social-linkedin"></a>
+          <a href="" class="icon ion-social-dribbble-outline"></a>
+        </div>
+        <div class="copy">© Peru International corporation 2020. Todos los derechos reservados</div>
+      </div>
+    </div>
+
+    <!-- Navbar -->
+
+    <header class="navbar navbar-fullpage boxed">
+      <div class="navbar-bg"></div>
+      <a class="brand" href="#">
+        <img alt="" src='{{pagina_principal.logo or "/assets/peruintercorp/images/logo.png"}}' style="max-height: 2.5rem;">
+        <div class="brand-info">
+          <div class="brand-name">{{pagina_principal.empresa or "Peru Intercorp"}}</div>
+        </div>
+      </a>
+
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      
+      <div class="contacts d-none d-md-block">
+        <div class="contact-item">
+          {{pagina_principal.telefono or "+51 054-247-272"}}
+        </div>
+        <div class="contact-item spacer">
+          /
+        </div>
+        <div class="contact-item">
+          <a href='mailto:{{pagina_principal.email or "support@peruintercorp.com"}}'>{{pagina_principal.email or "support@peruintercorp.com"}}</a>
+        </div>
+      </div>
+    </header>
+    <div class="copy-bottom white boxed">© Peru Intercorp.</div>
+    <div class="social-list social-list-bottom boxed">
+        <a href="" class="icon ion-social-twitter"></a>
+        <a href="" class="icon ion-social-facebook"></a>
+        <a href="" class="icon ion-social-googleplus"></a>
+        <a href="" class="icon ion-social-linkedin"></a>
+        <a href="" class="icon ion-social-dribbble-outline"></a>
+      </div>
+    <div class="pagepiling">
+      <div data-anchor="page1" class="pp-scrollable text-white section section-1">
+        <div class="scroll-wrap">
+          <div class="section-bg" style='background-image:url({{pagina_principal.fondo_de_pantalla or "/assets/peruintercorp/images/bg/background.jpg"}});'></div>
+          <div class="scrollable-content">
+            <div class="vertical-centred">
+              <div class="boxed boxed-inner">
+                <div class="boxed">
+                  <div class="container">
+                    <div class="intro">
+                      <div class="row">
+                        <div class="col-md-8 col-lg-6">
+                          <h1 class="display-2 text-white  wow fadeIn" data-wow-delay="0.1s"><span class="text-primary">{{pagina_principal.titulo or "Peru Intercorp,"}}</span> {{pagina_principal.subtitulo or "Desarrollo de software"}}</h1>
+                          <a class="popup-youtube"  href="{{pagina_principal.youtube}}"><span class="icon ion-ios-play"></span>Ver video </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div data-anchor="page2" class="pp-scrollable section section-2">
+        <div class="scroll-wrap">
+          <div class="scrollable-content">
+            <div class="vertical-title text-white  d-none d-lg-block"><span>Soluciones</span></div>
+            <div class="vertical-centred">
+              <div class="boxed boxed-inner">
+                <div class="boxed">
+                  <div class="container">
+                    <div class="intro">
+                      <h2 class="title mb-5 pb-5"> <span class="text-primary">Nuestras</span> soluciones</h2>
+                      <div class="row-specialization row">
+                        <div class="col-specialization col-md-6 col-lg-4">
+                          <span class="icon-specialization icon-laptop-phone"></span>
+                          <h4 class="text-uppercase">{{nuestras_soluciones.titulo_1}}</h4>
+                          <p>{{nuestras_soluciones.contenido_1}}</p>
+                        </div>
+                        <div class="col-specialization col-md-6 col-lg-4">
+                          <span class="icon-specialization icon-smartphone-embed"></span>
+                          <h4 class="text-uppercase">{{nuestras_soluciones.titulo_2}}</h4>
+                          <p>{{nuestras_soluciones.contenido_2}}</p>
+                        </div>
+                        <div class="col-specialization col-md-6 col-lg-4">
+                          <span class="icon-specialization icon-diamond2"></span>
+                          <h4 class="text-uppercase">{{nuestras_soluciones.titulo_3}}</h4>
+                          <p>{{nuestras_soluciones.contenido_3}}</p>
+                        </div>
+                      </div>
+                      <div class="view-all">
+                        <a href='{{nuestras_soluciones.descarga_nuestro_broschure or "#"}}'>
+                          Descarga Nuestro Broschure
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div data-anchor="page3" class="pp-scrollable text-white section section-3">
+        <div class="scroll-wrap">
+          <div class="section-bg mask" style='background-image:url({{pagina_principal.fondo_de_pantalla or "/assets/peruintercorp/images/bg/resume.jpg)"}};'></div>
+          <div class="scrollable-content">
+            <div class="vertical-title d-none d-lg-block"><span>{{seccion_3.encabezado_1 or "Desarrollo Web"}}</span></div>
+            <div class="vertical-centred">
+              <div class="boxed boxed-inner">
+                <div class="boxed">
+                  <div class="container">
+                    <div class="intro">
+                      <div class="row row-resume">
+                        <div class="col-md-6 fadeY fadeY-1">
+                          <h2 class="resume-header title">{{seccion_3.encabezado_1 or "Desarrollo Web"}}</h2>
+                          <div class="col-resume">
+                            <div class="resume-content">
+                              <div class="resume-inner">
+                                <div class="resume-row">
+                                  <h6 class="resume-type">{{seccion_3.titulo_1 or ""}}</h6>
+                                  <i class="resume-study">{{seccion_3.subtitulo_1 or ""}}</i>
+                                  <p class="resume-text">{{seccion_3.contenido_1 or ""}}</p>
+                                </div>
+                                <div class="resume-row">
+                                  <h6 class="resume-type">{{seccion_3.titulo_2 or ""}}</h6>
+                                  <i class="resume-study">{{seccion_3.subtitulo_2 or ""}}</i>
+                                  <p class="resume-text">{{seccion_3.contenido_2 or ""}}</p>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-md-6 pt-md-5 mt-md-5 fadeY fadeY-2">
+                          <h2 class="resume-header title">{{seccion_3.encabezado_2 or "Experiencia"}}</h2>
+                          <div class="col-resume">
+                            <div class="resume-content">
+                              <div class="resume-inner">
+                                <div class="resume-row">
+                                  <h6 class="resume-type">{{seccion_3.titulo_3 or ""}}</h6>
+                                  <i class="resume-study">{{seccion_3.subtitulo_3 or ""}}</i>
+                                  <p class="resume-text">{{seccion_3.contenido_3 or ""}}</p>
+                                </div>
+                                <div class="resume-row">
+                                  <h6 class="resume-type">{{seccion_3.titulo_4 or ""}}</h6>
+                                  <i class="resume-study">{{seccion_3.subtitulo_4 or ""}}</i>
+                                  <p class="resume-text">{{seccion_3.contenido_4 or ""}}</p>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                       </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div data-anchor="page4" class="pp-scrollable section section-4">
+        <div class="scroll-wrap">
+          <div class="section-bg bg-about" style="background-image:url(/assets/peruintercorp/images/bg/about.jpg);"></div>
+          <div class="scrollable-content">
+            <div class="vertical-title text-white  d-none d-lg-block"><span>Sobre la empresa</span></div>
+            <div class="vertical-centred">
+              <div class="boxed boxed-inner">
+                <div class="boxed">
+                  <div class="container">
+                    <div class="intro">
+                      <div class="row align-items-center">
+                        <div class="col-lg-6 offset-xl-1">
+                          <div class="experience-box">
+                            <div class="experience-content">
+                              <div class="experience-number">4</div>
+                              <div class="experience-info"><div>Años<br>de experiencia<br>Creando Soluciones</div></div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-lg-5 mt-5 mt-xl-0">
+                          <h2 class="title"> <span class="text-primary">Las Mejores</span> Paginas Web</h2>
+                          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium dicta sit pariatur odio unde deleniti eveniet.
+                          <div class="progress-bars">
+                            <div class="clearfix">
+                              <div class="number float-left">Apps Desarrolladas</div>
+                              <div class="number float-right">10</div>
+                            </div>
+                            <div class="progress">
+                              <div class="progress-bar-wrp">
+                                <div class="progress-bar" role="progressbar" style="width: 80%" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+                              </div>
+                            </div>
+                            <div class="clearfix">
+                              <div class="number float-left">ERP Implementado</div>
+                              <div class="number float-right">4</div>
+                            </div>
+                            <div class="progress">
+                              <div class="progress-bar-wrp">
+                                <div class="progress-bar" role="progressbar" style="width: 70%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                              </div>
+                            </div>
+                            <div class="clearfix">
+                              <div class="number float-left">Web Diseñadas</div>
+                              <div class="number float-right">7</div>
+                            </div>
+                            <div class="progress">
+                              <div class="progress-bar-wrp">
+                                <div class="progress-bar" role="progressbar" style="width: 70%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div data-anchor="page5" class="pp-scrollable text-white section section-5">
+        <div class="scroll-wrap">
+          <div class="bg-changer">
+            {% for proyecto in proyectos %}
+            <div class="section-bg" style="background-image:url({{proyecto.imagen_de_fondo}});"></div>
+            {% endfor %}
+          </div>
+          <div class="scrollable-content">
+            <div class="vertical-title  d-none d-lg-block"><span>Proyectos</span></div>
+            <div class="vertical-centred">
+              <div class="boxed boxed-inner">
+                <div class="boxed">
+                  <div class="container">
+                    <div class="intro">
+                      <div class="row">
+                        <div class="col-md-12">
+                          {% for proyecto in proyectos %}
+                            <div class="project-row">
+                              <a class="active" href="project-detail.html">
+                                <span class="project-number">{{ proyecto.tipo_del_proyecto }}</span>
+                                <h2 class="project-title">{{ proyecto.nombre }}</h2>
+                                <div class="project-category">{{ proyecto.cliente }}</div>
+                              </a>
+                            </div>
+                          {% endfor %}
+                          <div class="view-all view-all-projects">
+                            <a  href="projects.html">
+                              Ver Todos los Proyectos
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div data-anchor="page6" class="pp-scrollable section section-6">
+        <div class="scroll-wrap">
+          <div class="scrollable-content">
+            <div class="vertical-title text-white d-none d-lg-block"><span>Clientes</span></div>
+            <div class="vertical-centred">
+              <div class="boxed boxed-inner">
+                <div class="boxed">
+                  <div class="container">
+                    <div class="intro">
+                       <h2 class="title text-white"><span class="text-primary">Algunos</span> de nuestros Clientes</h2>
+                      <div class="row row-partners">
+                        <div class="col-sm-6 col-md-4 col-xl-3 col-partner">
+                          <div class="partner-inner"><img alt="" src="/assets/peruintercorp/images/partners/1.png"></div>
+                        </div>
+                        <div class="col-sm-6 col-md-4 col-xl-3 col-partner">
+                          <div class="partner-inner"><img alt="" src="/assets/peruintercorp/images/partners/2.png"></div>
+                        </div>
+                        <div class="col-sm-6 col-md-4 col-xl-3 col-partner">
+                          <div class="partner-inner"><img alt="" src="/assets/peruintercorp/images/partners/3.png"></div>
+                        </div>
+                        <div class="col-sm-6 col-md-4 col-xl-3 col-partner">
+                          <div class="partner-inner"><img alt="" src="/assets/peruintercorp/images/partners/4.png"></div>
+                        </div>
+                        <div class="col-sm-6 col-md-4 col-xl-3 col-partner">
+                          <div class="partner-inner"><img alt="" src="/assets/peruintercorp/images/partners/5.png"></div>
+                        </div>
+                        <div class="col-sm-6 col-md-4 col-xl-3 col-partner">
+                          <div class="partner-inner"><img alt="" src="/assets/peruintercorp/images/partners/6.png"></div>
+                        </div>
+                        <div class="col-sm-6 col-md-4 col-xl-3 col-partner">
+                          <div class="partner-inner"><img alt="" src="/assets/peruintercorp/images/partners/7.png"></div>
+                        </div>
+                        <div class="col-sm-6 col-md-4 col-xl-3 col-partner">
+                          <div class="partner-inner"><img alt="" src="/assets/peruintercorp/images/partners/8.png"></div>
+                        </div>
+                        <div class="col-sm-6 col-md-4 col-xl-3 col-partner">
+                          <div class="partner-inner"><img alt="" src="/assets/peruintercorp/images/partners/9.png"></div>
+                        </div>
+                        <div class="col-sm-6 col-md-4 col-xl-3 col-partner">
+                          <div class="partner-inner"><img alt="" src="/assets/peruintercorp/images/partners/10.png"></div>
+                        </div>
+                        <div class="col-sm-6 col-md-4 col-xl-3 col-partner">
+                          <div class="partner-inner"><img alt="" src="/assets/peruintercorp/images/partners/11.png"></div>
+                        </div>
+                        <div class="col-sm-6 col-md-4 col-xl-3 col-partner">
+                          <div class="partner-inner"><img alt="" src="/assets/peruintercorp/images/partners/12.png"></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div data-anchor="page7" class="pp-scrollable text-white section section-7">
+        <div class="scroll-wrap">
+          <div class="section-bg" style="background-image:url(/assets/peruintercorp/images/bg/reviews.jpg);"></div>
+          <div class="bg-quote"></div>
+          <div class="scrollable-content">
+            <div class="vertical-title  d-none d-lg-block"><span>Testimonios</span></div>
+            <div class="vertical-centred">
+              <div class="boxed boxed-inner">
+                <div class="boxed">
+                  <div class="container">
+                    <div class="intro">
+                      <div class="review-carousel owl-carousel">
+                        <div class="review-carousel-item">
+                          <div class="review-row">
+                            <div class="row">
+                              <div class="col-md-5">
+                                <div class="review-author">
+                                  <div class="author-name">Jhon Doe</div>
+                                  <i>Lorem ipsum, dolor sit amet consectetur adipisicing.</i>
+                                </div>
+                              </div>
+                              <div class="col-md-7 text">
+                              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto et maiores accusamus ex soluta sapiente explicabo sed velit mollitia pariatur officiis itaque voluptatibus rem voluptas sequi, possimus magni recusandae modi.</p>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="review-row">
+                            <div class="row">
+                              <div class="col-md-5">
+                                <div class="review-author">
+                                  <div class="author-name">Amanda</div>
+                                  <i>Lorem ipsum, dolor sit amet</i>
+                                </div>
+                              </div>
+                              <div class="col-md-7 text">
+                              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio dolorem reiciendis doloremque veniam perspiciatis quam velit pariatur eius, repellendus dolores eveniet maiores sed. Quod quam minus dolore sed cumque aliquid.</p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="review-carousel-item">
+                          <div class="review-row">
+                            <div class="row">
+                              <div class="col-md-5">
+                                <div class="review-author">
+                                  <div class="author-name">Jhon Doe</div>
+                                  <i>Lorem ipsum, dolor sit</i>
+                                </div>
+                              </div>
+                              <div class="col-md-7 text">
+                              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ratione dolore nobis, tenetur similique quia quaerat in ea dicta voluptatum? Dolor nostrum cumque eos quod officiis consequuntur dolorem nobis suscipit placeat?</p>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="review-row">
+                            <div class="row">
+                              <div class="col-md-5">
+                                <div class="review-author">
+                                  <div class="author-name">Amanda</div>
+                                  <i>Lorem ipsum dolor sit amet consectetur adipisicing elit.</i>
+                                </div>
+                              </div>
+                              <div class="col-md-7 text">
+                              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio dolorem reiciendis doloremque veniam perspiciatis quam velit pariatur eius, repellendus dolores eveniet maiores sed. Quod quam minus dolore sed cumque aliquid.</p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="review-carousel-item">
+                          <div class="review-row">
+                            <div class="row">
+                              <div class="col-md-5">
+                                <div class="review-author">
+                                  <div class="author-name">David</div>
+                                  <i>Lorem ipsum dolor.</i>
+                                </div>
+                              </div>
+                              <div class="col-md-7 text">
+                              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officiis voluptatibus ratione pariatur at. Reiciendis nobis dolorum ut veniam incidunt. Quaerat illo distinctio ipsum. Vel voluptatibus quibusdam, illo tempora cupiditate odio!</p>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="review-row">
+                            <div class="row">
+                              <div class="col-md-5">
+                                <div class="review-author">
+                                  <div class="author-name">Stephan</div>
+                                  <i>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</i>
+                                </div>
+                              </div>
+                              <div class="col-md-7 text">
+                              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio dolorem reiciendis doloremque veniam perspiciatis quam velit pariatur eius, repellendus dolores eveniet maiores sed. Quod quam minus dolore sed cumque aliquid.</p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div data-anchor="page8" class="pp-scrollable section section-8">
+        <div class="scroll-wrap">
+          <div class="section-bg" style="background-image:url(/assets/peruintercorp/images/bg/contact.jpg);"></div>
+          <div class="scrollable-content">
+            <div class="vertical-title text-white d-none d-lg-block"><span>contactos</span></div>
+            <div class="vertical-centred">
+              <div class="boxed boxed-inner">
+                <div class="boxed">
+                  <div class="container">
+                    <div class="intro overflow-hidden">
+                      <div class="row">
+                        <div class="col-md-6">
+                          <h2 class="title"><span class="text-primary">Arequipa</span>, Perú</h2>
+                          <h5 class="text-muted">Calle Portal de San Agustín Nro. 145</h5>
+                          <section class="contact-address">
+                            <h3><a class="mail" href="mailto:contact@ramsay.com"> support@peruintercorp.com</a></h3>
+                            <h3><span class="phone">+51 054 274 242</span></h3>
+                          </section>
+                        </div>
+                        <div class="col-md-6">
+                          <div class="contact-info">
+                            <form class="js-form" novalidate="novalidate">
+                              <div class="row">
+                                <div class="form-group col-sm-6">
+                                  <input type="text" name="name" required="" placeholder="Nombre*" aria-required="true">
+                                </div>
+                                <div class="form-group col-sm-6">
+                                  <input type="email" required="" name="email" placeholder="Correo Electrónico*">
+                                </div>
+                                <div class="form-group col-sm-12">
+                                  <input type="text" name="subject" placeholder="Sujeto (Opcional)">
+                                </div>
+                                <div class="form-group col-sm-12">
+                                  <textarea name="message" required="" placeholder="Mensaje*"></textarea>
+                                </div>
+                                <div class="form-group form-group-message col-sm-12">
+                                  <span id="success" class="text-primary">Gracias, Su mensaje se ha enviado con éxito!</span>
+                                  <span id="error" class="text-primary">Disculpe, Algo salió mal</span>
+                                </div>
+                                <div class="col-sm-12"><button type="submit" class="btn">Contactarnos</button></div>
+                              </div>
+                            </form>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+<!-- jQuery -->
+
+<script src="/assets/peruintercorp/js/jquery.min.js"></script>
+<script src="/assets/peruintercorp/js/wow.min.js"></script>
+<script src="/assets/peruintercorp/js/smoothscroll.js"></script>
+<script src="/assets/peruintercorp/js/animsition.js"></script>
+<script src="/assets/peruintercorp/js/jquery.validate.min.js"></script>
+<script src="/assets/peruintercorp/js/jquery.magnific-popup.min.js"></script>
+<script src="/assets/peruintercorp/js/owl.carousel.min.js"></script>
+<script src="/assets/peruintercorp/js/jquery.pagepiling.min.js"></script>
+
+<!-- Scripts -->
+<script src="/assets/peruintercorp/js/scripts.js"></script> 
+</body>
+</html>

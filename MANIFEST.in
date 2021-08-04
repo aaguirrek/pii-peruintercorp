@@ -1,0 +1,18 @@
+include MANIFEST.in
+include requirements.txt
+include *.json
+include *.md
+include *.py
+include *.txt
+recursive-include peruintercorp *.css
+recursive-include peruintercorp *.csv
+recursive-include peruintercorp *.html
+recursive-include peruintercorp *.ico
+recursive-include peruintercorp *.js
+recursive-include peruintercorp *.json
+recursive-include peruintercorp *.md
+recursive-include peruintercorp *.png
+recursive-include peruintercorp *.py
+recursive-include peruintercorp *.svg
+recursive-include peruintercorp *.txt
+recursive-exclude peruintercorp *.pyc
