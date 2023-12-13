@@ -1,10 +1,9 @@
-# -*- coding: utf-8 -*-
-# Copyright (c) 2020, Peru Intercorp and Contributors
+# Copyright (c) 2023, Peru Intercorp and Contributors
 # See license.txt
-from __future__ import unicode_literals
 
-import frappe
-import unittest
+# import frappe
+from frappe.tests.utils import FrappeTestCase
 
-class TestNuestrasSoluciones(unittest.TestCase):
+
+class TestNuestrasSoluciones(FrappeTestCase):
 	pass
