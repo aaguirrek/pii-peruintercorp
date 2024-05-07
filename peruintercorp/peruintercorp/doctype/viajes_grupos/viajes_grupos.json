@@ -1,0 +1,168 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-04-15 13:35:33.774421",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "nombre_del_grupo",
+  "tipo",
+  "column_break_ajnf",
+  "colegio",
+  "a\u00f1o",
+  "pagos",
+  "section_break_dqkr",
+  "fecha_pago_1",
+  "fecha_pago_3",
+  "fecha_pago_5",
+  "fecha_pago_7",
+  "fecha_pago_9",
+  "fecha_pago_11",
+  "column_break_zgfb",
+  "fecha_pago_2",
+  "fecha_pago_4",
+  "fecha_pago_6",
+  "fecha_pago_8",
+  "fecha_pago_10",
+  "fecha_pago_12"
+ ],
+ "fields": [
+  {
+   "fieldname": "nombre_del_grupo",
+   "fieldtype": "Data",
+   "label": "Nombre del Grupo"
+  },
+  {
+   "fieldname": "tipo",
+   "fieldtype": "Data",
+   "label": "Tipo"
+  },
+  {
+   "fieldname": "column_break_ajnf",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "colegio",
+   "fieldtype": "Link",
+   "label": "Colegio",
+   "options": "Viaje Colegios"
+  },
+  {
+   "fieldname": "a\u00f1o",
+   "fieldtype": "Int",
+   "label": "A\u00f1o"
+  },
+  {
+   "fieldname": "section_break_dqkr",
+   "fieldtype": "Section Break"
+  },
+  {
+   "depends_on": "eval: doc.pagos >= 1",
+   "fieldname": "fecha_pago_1",
+   "fieldtype": "Date",
+   "label": "fecha pago 1"
+  },
+  {
+   "depends_on": "eval: doc.pagos >= 2",
+   "fieldname": "fecha_pago_2",
+   "fieldtype": "Date",
+   "label": "fecha pago 2"
+  },
+  {
+   "depends_on": "eval: doc.pagos >= 3",
+   "fieldname": "fecha_pago_3",
+   "fieldtype": "Date",
+   "label": "fecha pago 3"
+  },
+  {
+   "depends_on": "eval: doc.pagos >= 4",
+   "fieldname": "fecha_pago_4",
+   "fieldtype": "Date",
+   "label": "fecha pago 4"
+  },
+  {
+   "depends_on": "eval: doc.pagos >= 5",
+   "fieldname": "fecha_pago_5",
+   "fieldtype": "Date",
+   "label": "fecha pago 5"
+  },
+  {
+   "depends_on": "eval: doc.pagos >= 6",
+   "fieldname": "fecha_pago_6",
+   "fieldtype": "Date",
+   "label": "fecha pago 6"
+  },
+  {
+   "depends_on": "eval: doc.pagos >= 7",
+   "fieldname": "fecha_pago_7",
+   "fieldtype": "Date",
+   "label": "fecha pago 7"
+  },
+  {
+   "depends_on": "eval: doc.pagos >= 8",
+   "fieldname": "fecha_pago_8",
+   "fieldtype": "Date",
+   "label": "fecha pago 8"
+  },
+  {
+   "depends_on": "eval: doc.pagos >= 9",
+   "fieldname": "fecha_pago_9",
+   "fieldtype": "Date",
+   "label": "fecha pago 9"
+  },
+  {
+   "depends_on": "eval: doc.pagos >= 10",
+   "fieldname": "fecha_pago_10",
+   "fieldtype": "Date",
+   "label": "fecha pago 10"
+  },
+  {
+   "depends_on": "eval: doc.pagos >= 11",
+   "fieldname": "fecha_pago_11",
+   "fieldtype": "Date",
+   "label": "fecha pago 11"
+  },
+  {
+   "depends_on": "eval: doc.pagos >= 12",
+   "fieldname": "fecha_pago_12",
+   "fieldtype": "Date",
+   "label": "fecha pago 12"
+  },
+  {
+   "default": "0",
+   "fieldname": "pagos",
+   "fieldtype": "Int",
+   "label": "numero de pagos"
+  },
+  {
+   "fieldname": "column_break_zgfb",
+   "fieldtype": "Column Break"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-05-04 15:33:27.644877",
+ "modified_by": "Administrator",
+ "module": "Peruintercorp",
+ "name": "Viajes Grupos",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "show_title_field_in_link": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "nombre_del_grupo"
+}

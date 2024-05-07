@@ -22,3 +22,13 @@ def buscarCliente( cliente = None ):
     txt="SELECT * FROM tabCustomer WHERE name like '%"+cliente+"%' or tax_id = '"+cliente+"' or mobile_no = '"+cliente+"' or email_id like '%"+cliente+"%';"
     data = frappe.db.sql(txt, as_dict=1)
     return data
+
+
+@frappe.whitelist(allow_guest=False)
+def vouchers(voucher,user):
+	frappe.set_user(user)
+	url = "http://localhost:5300/copilot/"+voucher
+	payload = {}
+	headers = {}
+	response = requests.request("GET", url, headers=headers, data=payload)
+	return response.json()
