@@ -1,0 +1,61 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-06-17 13:43:23.304572",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "servicio",
+  "fecha_de_pago",
+  "monto",
+  "moneda",
+  "pago"
+ ],
+ "fields": [
+  {
+   "fieldname": "servicio",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Servicio",
+   "options": "Servicios agenda"
+  },
+  {
+   "fieldname": "fecha_de_pago",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Fecha de pago"
+  },
+  {
+   "fieldname": "monto",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Monto"
+  },
+  {
+   "fieldname": "moneda",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Moneda",
+   "options": "Currency"
+  },
+  {
+   "fieldname": "pago",
+   "fieldtype": "Attach",
+   "in_list_view": 1,
+   "label": "pago"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2024-06-19 15:42:40.060262",
+ "modified_by": "Administrator",
+ "module": "Peruintercorp",
+ "name": "Servicios adicionales",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

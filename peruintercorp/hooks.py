@@ -81,13 +81,17 @@ app_include_js = [
 # ---------------
 # Hook on document methods and events
 
-# doc_events = {
+doc_events = {
+
+	"Papas":{
+		"before_insert":"peruintercorp.api.crearusuarios_red_social"
+	},
 # 	"*": {
 # 		"on_update": "method",
 # 		"on_cancel": "method",
 # 		"on_trash": "method"
 #	}
-# }
+}
 
 # Scheduled Tasks
 # ---------------
