@@ -1,0 +1,142 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-07-27 15:30:35.425874",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "name1",
+  "user_1",
+  "group_image",
+  "type",
+  "column_break_qoik",
+  "last_message",
+  "user_2",
+  "private",
+  "read",
+  "send",
+  "count",
+  "section_break_sixp",
+  "room_users"
+ ],
+ "fields": [
+  {
+   "fieldname": "last_message",
+   "fieldtype": "Data",
+   "label": "Last Message"
+  },
+  {
+   "default": "0",
+   "fieldname": "private",
+   "fieldtype": "Check",
+   "label": "Private"
+  },
+  {
+   "fieldname": "name1",
+   "fieldtype": "Data",
+   "label": "Name"
+  },
+  {
+   "fieldname": "group_image",
+   "fieldtype": "Attach Image",
+   "label": "Group Image"
+  },
+  {
+   "fieldname": "column_break_qoik",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "user_1",
+   "fieldtype": "Data",
+   "label": "User 1"
+  },
+  {
+   "fieldname": "user_2",
+   "fieldtype": "Data",
+   "label": "User 2"
+  },
+  {
+   "fieldname": "type",
+   "fieldtype": "Select",
+   "label": "Type",
+   "options": "\nChat\nFamilia\nLaboral Cliente\nLaboral Proveedor\nGrupo"
+  },
+  {
+   "fieldname": "section_break_sixp",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "room_users",
+   "fieldtype": "Table",
+   "label": "Room Users",
+   "options": "Chatcorp Rooms Users"
+  },
+  {
+   "default": "0",
+   "fieldname": "read",
+   "fieldtype": "Check",
+   "label": "Read"
+  },
+  {
+   "default": "0",
+   "fieldname": "send",
+   "fieldtype": "Check",
+   "label": "Send"
+  },
+  {
+   "fieldname": "count",
+   "fieldtype": "Int",
+   "label": "Count"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-07-27 17:15:10.012882",
+ "modified_by": "Administrator",
+ "module": "Peruintercorp",
+ "name": "ChatCorp Rooms",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "if_owner": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "All",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "if_owner": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Guest",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

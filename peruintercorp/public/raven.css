@@ -1,0 +1,9 @@
+*{
+	font-family: Public Sans,sans-serif!important;
+}
+@media (min-width: 992px) {
+    .rt-Flex.rt-r-fd-row.rt-r-jc-space-between.rt-r-gap-2 {
+        max-width: 380px!important;
+        min-width: 380px!important;
+    }
+}

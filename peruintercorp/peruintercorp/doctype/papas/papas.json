@@ -9,6 +9,7 @@
   "nombres",
   "telefono",
   "contrasena",
+  "dominio",
   "column_break_agfb",
   "apellido_paterno",
   "correo",
@@ -96,11 +97,17 @@
    "fieldname": "full_name",
    "fieldtype": "Data",
    "label": "full Name"
+  },
+  {
+   "fieldname": "dominio",
+   "fieldtype": "Data",
+   "label": "dominio",
+   "reqd": 1
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-05-29 20:07:49.147787",
+ "modified": "2024-07-20 13:59:36.015387",
  "modified_by": "Administrator",
  "module": "Peruintercorp",
  "name": "Papas",

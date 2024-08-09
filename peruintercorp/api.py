@@ -55,7 +55,7 @@ def crearusuarios_red_social(doc,event=None):
 	if doc.correo is None:
 		doc.correo 	= (nombres+"_"+ap+"_"+am).lower()+"@santanaviajes.com"
 
-	url 			= "https://agendatusviajes.com/api/create-account"
+	url 			= "https://"+doc.dominio+"/api/create-account"
 	doc.full_name 	= doc.nombres + " " + doc.apellido_paterno + " " + doc.apellido_materno
 	
 	payload = {
@@ -73,7 +73,7 @@ def crearusuarios_red_social(doc,event=None):
 	doc.user_id				= response.json()["user_id"]
 	
 	try:
-		url = "https://agendatusviajes.com/api/update-user-data?access_token="+response.json()["access_token"]
+		url = "https://"+doc.dominio+"/api/update-user-data?access_token="+response.json()["access_token"]
 		payload = {
 			'server_key'	: 'eee4a212a9641f281fe0a2318b22eefe',
 			'phone_number'	: doc.telefono,
@@ -89,11 +89,11 @@ def crearusuarios_red_social(doc,event=None):
 	return response
 
 @frappe.whitelist()
-def crearusuarios_red_social2():
+def crearusuarios_red_social2(dominio="agendatusviajes.com"):
 	docs = frappe.get_list(doctype="El VIaje De Promo", fields=["*"],filters=[["colegio","=","5a27ff465f"]], limit_page_length=200)
 	for doc in docs:
 
-		url						= "https://agendatusviajes.com/api/create-account"
+		url						= f"https://{dominio}/api/create-account"
 		doc.full_name 			= doc.nombres + " " + doc.primer_apellido + " " + doc.segundo_apellido
 		payload = {
 			'server_key' 		: "eee4a212a9641f281fe0a2318b22eefe",
@@ -112,7 +112,7 @@ def crearusuarios_red_social2():
 		
 		try:
 		
-			url 				= "https://agendatusviajes.com/api/update-user-data?access_token="+response.json()["access_token"]	
+			url 				= f"https://{dominio}/api/update-user-data?access_token="+response.json()["access_token"]	
 		
 			payload 			= {
 				'server_key'	: "eee4a212a9641f281fe0a2318b22eefe",

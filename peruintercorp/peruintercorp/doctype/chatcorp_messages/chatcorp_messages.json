@@ -1,0 +1,137 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-07-27 16:24:22.751117",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "from",
+  "room",
+  "message",
+  "column_break_exwi",
+  "read",
+  "type",
+  "party",
+  "party_name",
+  "asign_1",
+  "asign_2",
+  "asign_3",
+  "asign_4",
+  "asign_5",
+  "asign_6",
+  "asign_7",
+  "asign_8"
+ ],
+ "fields": [
+  {
+   "fieldname": "from",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "From",
+   "reqd": 1
+  },
+  {
+   "fieldname": "message",
+   "fieldtype": "Text",
+   "label": "Message"
+  },
+  {
+   "fieldname": "type",
+   "fieldtype": "Select",
+   "label": "Type",
+   "options": "Message\nImage\nVideo\nAudio\nContact\nLocation\nQuotation\nSales Invoice\nLead\nProspect"
+  },
+  {
+   "fieldname": "party",
+   "fieldtype": "Data",
+   "label": "Party"
+  },
+  {
+   "fieldname": "party_name",
+   "fieldtype": "Data",
+   "label": "Party Name"
+  },
+  {
+   "fieldname": "column_break_exwi",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "read",
+   "fieldtype": "Check",
+   "label": "Read"
+  },
+  {
+   "fieldname": "asign_1",
+   "fieldtype": "Data",
+   "label": "Asign 1"
+  },
+  {
+   "fieldname": "asign_2",
+   "fieldtype": "Data",
+   "label": "Asign 2"
+  },
+  {
+   "fieldname": "asign_3",
+   "fieldtype": "Data",
+   "label": "Asign 3"
+  },
+  {
+   "fieldname": "asign_4",
+   "fieldtype": "Data",
+   "label": "Asign 4"
+  },
+  {
+   "fieldname": "asign_5",
+   "fieldtype": "Data",
+   "label": "Asign 5"
+  },
+  {
+   "fieldname": "asign_6",
+   "fieldtype": "Data",
+   "label": "Asign 6"
+  },
+  {
+   "fieldname": "asign_7",
+   "fieldtype": "Data",
+   "label": "Asign 7"
+  },
+  {
+   "fieldname": "asign_8",
+   "fieldtype": "Data",
+   "label": "Asign 8"
+  },
+  {
+   "fieldname": "room",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Room",
+   "options": "ChatCorp Rooms",
+   "reqd": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-07-27 16:29:23.141220",
+ "modified_by": "Administrator",
+ "module": "Peruintercorp",
+ "name": "ChatCorp messages",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
