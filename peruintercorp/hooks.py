@@ -86,6 +86,9 @@ doc_events = {
 	"Papas":{
 		"before_insert":"peruintercorp.api.crearusuarios_red_social"
 	},
+	"ChatCorp messages":{
+		"before_insert":"peruintercorp.method.pusherev"
+	},
 # 	"*": {
 # 		"on_update": "method",
 # 		"on_cancel": "method",

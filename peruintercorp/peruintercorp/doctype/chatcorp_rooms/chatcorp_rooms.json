@@ -59,7 +59,7 @@
    "fieldname": "type",
    "fieldtype": "Select",
    "label": "Type",
-   "options": "\nChat\nFamilia\nLaboral Cliente\nLaboral Proveedor\nGrupo"
+   "options": "\nChat\nFamilia\nLaboral Cliente\nLaboral Proveedor\nLaboral Grupo\nLaboral Compa\nGrupo"
   },
   {
    "fieldname": "section_break_sixp",
@@ -91,7 +91,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-07-27 17:15:10.012882",
+ "modified": "2024-08-10 15:02:09.075297",
  "modified_by": "Administrator",
  "module": "Peruintercorp",
  "name": "ChatCorp Rooms",
@@ -102,6 +102,7 @@
    "delete": 1,
    "email": 1,
    "export": 1,
+   "if_owner": 1,
    "print": 1,
    "read": 1,
    "report": 1,
