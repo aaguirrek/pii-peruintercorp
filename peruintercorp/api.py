@@ -30,9 +30,9 @@ def vouchers(voucher,user=None):
 	return response.json()
 
 @frappe.whitelist(allow_guest=True)
-def get_user_data(acces_token=''):
+def get_user_data(acces_token='',dominio="agendatusviajes.com"):
 	
-	url 		= "https://agendatusviajes.com/api/sessions?access_token="+acces_token
+	url 		= f"https://{dominio}/api/sessions?access_token="+acces_token
 	payload 	= {
 		'server_key': 'eee4a212a9641f281fe0a2318b22eefe',
 		'type'		: 'get'
@@ -42,6 +42,13 @@ def get_user_data(acces_token=''):
 	response 		= requests.request("POST", url, headers=headers, data=payload, files=files)
 	response 		= response.json()
 	user_id 		= response["data"][0]["user_id"]
+	name = frappe.get_list(doctype="Papas",fields=["name"],filters=[["user_id","=",user_id],["dominio","=",dominio]])
+
+	if len(name)==0:
+		doc = frappe.get_doc("Papas",user_id)
+		user_id = doc.name 
+	else:
+		user_id = name[0].name
 	return frappe.get_list(doctype="El VIaje De Promo", fields=["*"] ,or_filters=[["responsable1",'=',user_id],["responsable2",'=',user_id],["responsable3",'=',user_id]] )
 
 
@@ -130,3 +137,24 @@ def crearusuarios_red_social2(dominio="agendatusviajes.com"):
 			pass
 			
 	return response
+
+@frappe.whitelist()
+def resetpass(user):
+	papa=frappe.get_list("Papas",fields=["correo","dominio","contrasena"],filters=[['telefono',"=",user]])
+	url = f"https://{papa[0].dominio}/api/reset_password"
+
+	payload = {'server_key': 'eee4a212a9641f281fe0a2318b22eefe',
+	'new_password': papa[0].contrasena,
+	'username': user,
+	'code': '1_b71ff04df24097c998747e66c58e50de',
+	'email': papa[0].correo}
+	files=[
+
+	]
+	headers = {
+	'Cookie': '_us=1727305693; ad-con=%7B%26quot%3Bdate%26quot%3B%3A%26quot%3B2024-09-24%26quot%3B%2C%26quot%3Bads%26quot%3B%3A%5B%5D%7D; PHPSESSID=fs4adekoqofgsaodfdk4icq1nm; access=1; mode=day'
+	}
+
+	response = requests.request("POST", url, headers=headers, data=payload, files=files)
+
+	return response.json()

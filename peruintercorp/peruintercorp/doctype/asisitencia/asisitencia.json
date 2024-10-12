@@ -1,0 +1,117 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-10-06 08:38:47.045142",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "pasajero",
+  "apellido_paterno",
+  "apellido_materno",
+  "colegio",
+  "column_break_thlh",
+  "nombre",
+  "tkt",
+  "dni",
+  "checkin",
+  "hotel"
+ ],
+ "fields": [
+  {
+   "fieldname": "pasajero",
+   "fieldtype": "Link",
+   "label": "Pasajero",
+   "options": "El VIaje De Promo"
+  },
+  {
+   "fieldname": "column_break_thlh",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "pasajero.nombres",
+   "fieldname": "nombre",
+   "fieldtype": "Data",
+   "label": "nombre"
+  },
+  {
+   "fetch_from": "pasajero.primer_apellido",
+   "fieldname": "apellido_paterno",
+   "fieldtype": "Data",
+   "label": "Apellido Paterno"
+  },
+  {
+   "fetch_from": "pasajero.segundo_apellido",
+   "fieldname": "apellido_materno",
+   "fieldtype": "Data",
+   "label": "Apellido materno "
+  },
+  {
+   "fetch_from": "pasajero.tkt",
+   "fieldname": "tkt",
+   "fieldtype": "Attach",
+   "label": "tkt"
+  },
+  {
+   "fetch_from": "pasajero.subir_dni_o_pasaporte",
+   "fieldname": "dni",
+   "fieldtype": "Attach Image",
+   "label": "DNI"
+  },
+  {
+   "fetch_from": "pasajero.checkin",
+   "fieldname": "checkin",
+   "fieldtype": "Attach",
+   "label": "checkin"
+  },
+  {
+   "fetch_from": "pasajero.hotel",
+   "fieldname": "hotel",
+   "fieldtype": "Attach",
+   "label": "hotel"
+  },
+  {
+   "fetch_from": "pasajero.colegio",
+   "fieldname": "colegio",
+   "fieldtype": "Link",
+   "label": "colegio",
+   "options": "Viaje Colegios"
+  }
+ ],
+ "image_field": "dni",
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-10-06 08:57:15.646780",
+ "modified_by": "Administrator",
+ "module": "Peruintercorp",
+ "name": "asisitencia",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "All",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
